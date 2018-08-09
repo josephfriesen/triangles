@@ -8,8 +8,8 @@
   width: 80%
 }
 
-.triangle-output-equilateral, .triangle-output-isoceles,  .triangle-output-otherwise, .not-a-triangle, .triangle-output {
-  /* display: none; */
+.triangle-output-equilateral, .triangle-output-isosceles,  .triangle-output-scalene, .not-a-triangle, .triangle-output {
+  display: none;
 }
 
 .term {
