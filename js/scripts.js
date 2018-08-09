@@ -42,12 +42,12 @@ $(document).ready(function() {
     side3 = sideArray[2];
 
     var triangleType = "";
-    if (side1 === side2 && side2 === side3) {
+    if (side3 <= side1 + side2) {
+      triangleType = "scalene";
+    } else if (side1 === side2 && side2 === side3) {
       triangleType = "equilateral";
     } else if (side1 === side2 || side2 === side3 || side1 === side3) {
       triangleType = "isosceles";
-    } else if (side3 <= side1 + side2) {
-      triangleType = "scalene";
     } else {
       triangleType = "not a triangle";
     };
