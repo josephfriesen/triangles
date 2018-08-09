@@ -5,7 +5,7 @@
 }
 
 .form-control {
-  width: 80%
+  width: 80%;
 }
 
 .triangle-output-equilateral, .triangle-output-isosceles,  .triangle-output-scalene, .not-a-triangle, .triangle-output {
@@ -25,4 +25,24 @@
 #angles {
   float: right;
   width: 50%;
+}
+
+h4 {
+  text-align: center;
+  font-style: italic;
+}
+
+.output-img {
+  text-align: center;
+  padding: 4px;
+  margin: 8px;
+}
+
+.output-img img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.output-img figcaption {
+  font-size: 8pt;
 }
