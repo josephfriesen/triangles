@@ -1,0 +1,28 @@
+#triangle-input {
+  background-color: lightgrey;
+  border-style: dotted;
+  border: 3px grey;
+}
+
+.form-control {
+  width: 80%
+}
+
+.triangle-output-equilateral, .triangle-output-isoceles,  .triangle-output-otherwise, .not-a-triangle, .triangle-output {
+  /* display: none; */
+}
+
+.term {
+  font-style: italic;
+  font-weight: bolder;
+}
+
+#side-lengths {
+  float: left;
+  width: 50%;
+}
+
+#angles {
+  float: right;
+  width: 50%;
+}

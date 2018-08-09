@@ -17,24 +17,58 @@
 
       <div class="row">
 
-        <div class="col-md-6" id="triangle-input">
-          <h4>Triangle lengths</h4>
-          <h5>Please specify the lengths of the three sides of a triangle</h5>
-          <form id="input">
-            <div class="form-group">
-              <label for="side1">Length of side 1</label>
-              <input id="side1" class="form-control" type="text">
+        <div class="col-md-4">
+          <div class="card" id="triangle-input">
+            <h4>Triangle lengths</h4>
+            <h5>Please specify the lengths of the three sides of a triangle</h5>
+            <form id="input">
+              <div class="form-group">
+                <label for="side1">Length of side 1</label>
+                <input id="side1" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="side2">Length of side 2</label>
+                <input id="side2" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="side2">Length of side 3</label>
+                <input id="side3" class="form-control" type="text">
+              </div>
+              <button type="submit" class="btn btn-info">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div class="card" id="triangle-output-col">
+            <div class="card-header"><h4>Triangle soultion</h4></div>
+          <div class="card-body">
+            <div class="triangle-output-equilateral">
+              <h5>The side lengths entered on the left specify an <span class="term">Equilateral</span> triangle with the following parameters:
             </div>
-            <div class="form-group">
-              <label for="side2">Length of side 2</label>
-              <input id="side2" class="form-control" type="text">
+            <div class="triangle-output-isoceles">
+              <h5>The side lengths entered on the left specify an <span class="term">Isoceles</span> triangle with the following parameters:
             </div>
-            <div class="form-group">
-              <label for="side2">Length of side 3</label>
-              <input id="side3" class="form-control" type="text">
+            <div class="triangle-output-otherwise">
+              <h5> The side lengths entered on the left specify a triangle with the following parameters:
             </div>
-            <button type="submit" class="btn btn-info">Submit</button>
-          </form>
+            <div class="not-a-triangle">
+              <h5>The side lenths entered do not form a triangle.</h5>
+            </div>
+            <div class="triangle-output">
+              <ul id="side-lengths">
+                <li>Side <span class="term">A</span>: <span id="side-A-len"></li>
+                <li>Side <span class="term">B</span>: <span id="side-B-len"></li>
+                <li>Side <span class="term">C</span>: <span id="side-C-len"></li>
+              </ul>
+              <ul id="angles">
+                <li>Angle <span class="term">A</span>: <span id="angle-A-len"></li>
+                <li>Angle <span class="term">B</span>: <span id="angle-B-len"></li>
+                <li>Angle <span class="term">C</span>: <span id="angle-C-len"></li>
+              </ul>
+            </div>
+
+          </div>
         </div>
 
       </div>
