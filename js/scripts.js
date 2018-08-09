@@ -32,9 +32,9 @@ var radToDeg = function(x) {
 $(document).ready(function() {
   $("form#input").submit(function(event) {
     event.preventDefault();
-    var side1 = parseInt($("#side1").val());
-    var side2 = parseInt($("#side2").val());
-    var side3 = parseInt($("#side3").val());
+    var side1 = parseFloat($("#side1").val());
+    var side2 = parseFloat($("#side2").val());
+    var side3 = parseFloat($("#side3").val());
     var sideArray = [side1, side2, side3];
     sideArray = sideArray.sort(function(a,b){return a-b});
     side1 = sideArray[0];
