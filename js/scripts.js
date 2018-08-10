@@ -41,22 +41,24 @@ $(document).ready(function() {
     side2 = sideArray[1];
     side3 = sideArray[2];
 
+    var triangleTest = (isNaN(side1));
+    console.log(triangleTest, side1);
+
     var triangleType = "";
-    if (side3 <= side1 + side2) {
-      triangleType = "scalene";
+    if ( isNaN(side1) || isNaN(side2) || isNaN(side3) || side3 >= side1 + side2) {
+      triangleType = "not a triangle";
     } else if (side1 === side2 && side2 === side3) {
       triangleType = "equilateral";
     } else if (side1 === side2 || side2 === side3 || side1 === side3) {
       triangleType = "isosceles";
-    } else {
-      triangleType = "not a triangle";
+    }  else if (side3 <= side1 + side2) {
+      triangleType = "scalene";
     };
 
     if (triangleType != "not a triangle") {
       var angleAB = radToDeg(findAngle(side1, side2, side3)).toFixed(3);
       var angleBC = radToDeg(findAngle(side2, side3, side1)).toFixed(3);
       var angleAC = radToDeg(findAngle(side1, side3, side2)).toFixed(3);
-      console.log(angleAB, angleBC, angleAC);
     };
 
     $("#side-A-len").text(side1);
