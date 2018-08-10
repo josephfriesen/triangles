@@ -41,9 +41,6 @@ $(document).ready(function() {
     side2 = sideArray[1];
     side3 = sideArray[2];
 
-    var triangleTest = (isNaN(side1));
-    console.log(triangleTest, side1);
-
     var triangleType = "";
     if ( isNaN(side1) || isNaN(side2) || isNaN(side3) || side3 >= side1 + side2) {
       triangleType = "not a triangle";
